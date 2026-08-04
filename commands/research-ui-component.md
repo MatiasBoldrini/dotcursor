@@ -33,13 +33,21 @@ Buscá con sinónimos en inglés y español; no abras más de 2-4 candidatos por
 
 ## Cierre del flujo
 
-### 1) Abrir ejemplos
+Orden obligatorio: primero abrir todas las URLs; después (y solo después) la pregunta de implementación.
 
-Usá **AskQuestion** para preguntar si quiere abrir las URLs de los candidatos en el navegador (**Sí / No**). Si elige sí, ejecutá `open` con cada URL.
+### 1) Abrir referencias en el navegador (automático, sin preguntar)
+
+En la **misma respuesta** donde entregás la investigación, **antes** de cualquier **AskQuestion**, ejecutá en terminal **una sola vez** el comando con **todas** las URLs de la lista de candidatos (y la de la recomendación principal si no estaba ya incluida). No pidas confirmación.
+
+- **macOS:** `open "URL1" "URL2" ...`
+- **Linux:** `xdg-open URL` por URL en secuencia, o el equivalente que use el entorno.
+- **Windows:** `start "" "URL"` por URL, o el equivalente.
+
+Si no hay URLs válidas que abrir (ningún candidato con enlace), omití este paso y aclaralo en una frase.
 
 ### 2) Qué implementar
 
-Usá **AskQuestion** con los candidatos como opciones + **Otro**. No implementes código salvo que lo pida.
+Recién después del paso 1, usá **AskQuestion** con los candidatos como opciones + **Otro**. No implementes código salvo que lo pida.
 
 ### 3) Aprender fuentes nuevas
 
