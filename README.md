@@ -24,13 +24,11 @@ Refines recently modified code for clarity and consistency. Reduces nesting, rem
 
 Researches the web for existing UI patterns and components before you start coding. Checks curated sources (Aceternity UI, React Bits, Magic UI, 21st.dev, shadcn/ui) plus anything else relevant. Returns a comparison table, opens demos in your browser, and lets you pick what to implement. Learns new sources automatically when you choose a component from a site it didn't know.
 
-Install it as a Cursor skill:
-
 ```bash
-npx skills add MatiasBoldrini/dotcursor --skill research-ui-component -a cursor -g -y
+npx skills add MatiasBoldrini/dotcursor
 ```
 
-That copies it to `~/.cursor/skills/research-ui-component/`. In a project folder, drop `-g` to install it only for that repo. Then start a new Agent chat and run `/research-ui-component`.
+The CLI installs it for whichever agents it finds (Cursor, Claude Code, Codex, and the rest). Then start a new session and run `/research-ui-component`.
 
 The old command deeplink still works:
 
